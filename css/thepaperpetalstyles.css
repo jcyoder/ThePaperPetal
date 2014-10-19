@@ -1,0 +1,189 @@
+/* my styles */
+
+body {
+	 /* background-image: url("../images/bodybackground.jpg");
+	 background-position: left top;
+	 background-repeat: repeat; */
+	 background-color: #333366; 
+	 font-size: 16pt;
+}
+
+h1 {
+	color: #333366;
+}
+
+h3, h4 {
+
+	font-weight: 900;
+}
+
+a {
+	color: #333366;
+}
+
+.subject-pic {
+	float:left;
+	margin: 5px 15px 15px 0px;
+	border-radius: 5px;
+	width: 226px;
+}
+
+.container {
+	margin-top: 20px;
+	background-color: #A7A2B3;
+	border-radius: 10px;
+}
+
+.container .paper-heading {
+	min-width: 570px;
+	margin: 20px 15px 30px 15px;
+	border: 1px solid #333366;
+	padding: 25px 30px 40px 25px;
+	border-radius: 6px;
+	background-color: #eee;
+}
+
+.container .comp-info-header {
+	color: #333366;
+	margin:-8px 0px;
+
+}
+
+.phonenum {
+	float: right;
+
+}
+.nav-tabs {
+	border-bottom: 2px solid #333366;
+	margin-bottom: 26px;
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li:active>a:focus {
+	color: #333366;
+}
+
+.dropdown-menu {
+
+	font-size: 16pt;
+}
+
+.dropdown-menu>li>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+	color: #333366;
+}
+
+.panel {
+
+	background-color: #eee;
+}
+
+.panel-default>.panel-heading {
+
+	background-color: #333366;
+	color: #fff;
+}
+
+.p-padding {
+	padding-left: 15px;
+}
+
+.thumbnail {
+
+	margin-top: 26px;
+}
+
+footer {
+	font-size: 14pt;
+	background-color: #333366;
+	color: #fff;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding:10px;
+}
+
+
+.fixed-nav {
+	list-style-type: none;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	height: 40px;
+	margin-top: 15px;
+	padding-top: 5px;
+}
+
+.fixed-nav li {
+	display: inline;
+	text-decoration: none;
+	margin: 10px;
+	
+}
+
+.fixed-nav li a {
+	
+}
+.clearfix:: after {
+	content: " ";
+	display: table;
+	clear: both;
+};
+
+.center-img {
+
+	margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+.container .comp-info-header {
+		clear:right;
+		text-align: left;
+		margin: 0px;
+	}
+
+	.container .paper-heading {
+		min-width: 520px;
+		padding-bottom: 27px;
+	}
+
+	.center-img img {
+		max-width:400px;
+	}
+
+	.caption h4 {
+		font-size: 10pt;
+	}
+	
+}
+
+@media screen and (max-width: 520px) {
+	
+	
+	.container .comp-info-header {
+		font-size: 16pt;
+	}
+
+	.container .paper-heading {
+		min-width: 450px;
+		padding-bottom: 27px;
+	}
+	.center-img img {
+		max-width:300px;
+	}
+
+	.caption h4 {
+		display:none;
+	}
+
+	.panel-body {
+
+		font-size: 14pt;
+	}
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
