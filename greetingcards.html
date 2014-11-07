@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Paper Petal, LLC</title>
+    
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>  -->
+    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/thepaperpetalstyles.css" rel="stylesheet">
@@ -50,53 +59,52 @@
           </p>
           <div class="row">
             <div class="col-xs-4">
-                <a href="images/greetingcards/hello.jpg" target="_blank" class="thumbnail">
+                <a class="thumbnail fancybox" href="images/greetingcards/hello.jpg" target="_blank">
                     <img class="img-responsive" src="images/greetingcards/hello.jpg" alt="wedding picture">
                 </a>
             </div>
             <div class="col-xs-4">
-                <a href="images/greetingcards/glittersnowmen.jpg" target="_blank" class="thumbnail">
+                <a class="thumbnail fancybox" href="images/greetingcards/glittersnowmen.jpg" target="_blank">
                     <img class="img-responsive" src="images/greetingcards/glittersnowmen.jpg" alt="Embossing">
                 </a>
             </div>
             <div class="col-xs-4">
-                <a href="images/greetingcards/xmasornamentcard.jpg" target="_blank" class="thumbnail">
+                <a class="thumbnail fancybox" href="images/greetingcards/xmasornamentcard.jpg" target="_blank">
                     <img class="img-responsive" src="images/greetingcards/xmasornamentcard.jpg" alt="Wedding invitation">
                 </a>
             </div>   
           </div>
           <div class="row">
               <div class=" col-xs-4">
-                  <a href="images/greetingcards/glitterbunny.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/greetingcards/glitterbunny.jpg" target="_blank">
                       <img src="images/greetingcards/glitterbunny.jpg" alt="wedding invitation">
                   </a>
               </div>
               <div class="col-xs-4">
-                  <a href="images/greetingcards/callalilies.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/greetingcards/callalilies.jpg" target="_blank">
                       <img src="images/greetingcards/callalilies.jpg" alt="Columbine wedding">
                   </a>
               </div>
               <div class="col-xs-4">
-                  <a href="images/greetingcards/mothersdaycard.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/greetingcards/mothersdaycard.jpg" target="_blank">
                       <img src="images/greetingcards/mothersdaycard.jpg" alt="Baby Shower">
                   </a>
               </div> 
             </div>
             <div class="row">
                   <div class="col-xs-4">
-                      <a href="images/greetingcards/snowmancard.jpg" target="_blank" class="thumbnail">
+                      <a class="thumbnail fancybox" href="images/greetingcards/snowmancard.jpg" target="_blank">
                           <img src="images/greetingcards/snowmancard.jpg" alt="wedding invitation">
                       </a>
                   </div>
                   <div class="col-xs-4">
-                      <a href="images/greetingcards/thankyoucard.jpg" target="_blank" class="thumbnail">
+                      <a class="thumbnail fancybox" href="images/greetingcards/thankyoucard.jpg" target="_blank">
                           <img src="images/greetingcards/thankyoucard.jpg" alt="Columbine wedding">
                       </a>
                   </div>
                   <div class="col-xs-4">
                   </div> 
             </div>
-          
         </div> 
         <div class="row">
         <div class="col-md-4">
@@ -127,9 +135,10 @@
       &copy; The PaperPetal, LLC 2014 All Rights Reserved.
     </footer>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.fancybox').fancybox();
+      });
+    </script>
   </body>
 </html>

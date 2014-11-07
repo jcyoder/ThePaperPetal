@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Paper Petal, LLC</title>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/thepaperpetalstyles.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -82,34 +90,34 @@
       </div>
       <div class="row">
           <div class="col-xs-offset-1 col-xs-3">
-              <a href="images/invitations/coloradomountainwedding.jpg" target="_blank" class="thumbnail">
+              <a class="thumbnail fancybox" href="images/invitations/coloradomountainwedding.jpg" target="_blank" >
                   <img class="img-responsive" src="images/invitations/coloradomountainwedding.jpg" alt="wedding picture">
               </a>
           </div>
           <div class="col-xs-3">
-              <a href="images/invitations/closeupoftheembossededgesandcolumbine.jpg" target="_blank" class="thumbnail">
+              <a class="thumbnail fancybox" href="images/invitations/closeupoftheembossededgesandcolumbine.jpg" target="_blank">
                   <img class="img-responsive" src="images/invitations/closeupoftheembossededgesandcolumbine.jpg" alt="Embossing">
               </a>
           </div>
           <div class="col-xs-3">
-              <a href="images/invitations/closedinvitationwithribbon.jpg" target="_blank" class="thumbnail">
+              <a class="thumbnail fancybox" href="images/invitations/closedinvitationwithribbon.jpg" target="_blank">
                   <img class="img-responsive" src="images/invitations/closedinvitationwithribbon.jpg" alt="Wedding invitation">
               </a>
           </div>   
     </div>
     <div class="row">
           <div class="col-xs-offset-1 col-xs-3">
-              <a href="images/invitations/insideofinvitation.jpg" target="_blank" class="thumbnail">
+              <a class="thumbnail fancybox" href="images/invitations/insideofinvitation.jpg" target="_blank">
                   <img src="images/invitations/insideofinvitation.jpg" alt="wedding invitation">
               </a>
           </div>
           <div class="col-xs-3">
-              <a href="images/invitations/columbinewedding.jpg" target="_blank" class="thumbnail">
+              <a class="thumbnail fancybox" href="images/invitations/columbinewedding.jpg" target="_blank">
                   <img src="images/invitations/columbinewedding.jpg" alt="Columbine wedding">
               </a>
           </div>
           <div class="col-xs-3">
-              <a href="images/invitations/babyshower.jpg" target="_blank" class="thumbnail">
+              <a class="thumbnail fancybox" href="images/invitations/babyshower.jpg" target="_blank">
                   <img src="images/invitations/babyshower.jpg" alt="Baby Shower">
               </a>
           </div> 
@@ -118,9 +126,10 @@
       &copy; The PaperPetal, LLC 2014 All Rights Reserved.
     </footer>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.fancybox').fancybox();
+      });
+    </script>
   </body>
 </html>

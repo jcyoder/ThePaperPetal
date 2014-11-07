@@ -5,10 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Paper Petal, LLC</title>
+   <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script> -->
+       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
+
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/thepaperpetalstyles.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,7 +31,7 @@
             <!--<h1>The Paper Petal</h1>
             <h2>Custom invitations and paper art</h2> -->
             <div class="center-img">
-              <img src="images/paper_logo.gif" alt="The Paper Petal Logo">
+            <img src="images/paper_logo.gif" alt="The Paper Petal Logo">
             </div>
             <p class="comp-info-header col-md-6 col-sm-6 col-xs-12 text-left">janety@thepaperpetal.com</p>
             <p class="comp-info-header phonenum col-md-6 col-sm-6 col-xs-12 text-right">Phone: 970-396-9428</p>
@@ -83,7 +92,14 @@
 </div>
       <div class="row">
         <div class="col-md-8">
-          <img class="subject-pic" src="images/columbine2.jpg" class="img-rounded" alt="columbine picture">
+        <!--  <img class="subject-pic" src="images/columbine2.jpg" class="img-rounded" alt="columbine picture"> -->
+          <a href="images/columbine2.jpg" class="fancybox"><img class="subject-pic" src="images/columbine2.jpg" class="img-rounded" alt="columbine picture"></a>
+
+          <script type="text/javascript">
+            $(document).ready(function() {
+              $('.fancybox').fancybox();
+            });
+          </script>
           <p>
               The Paper Petal is a small company located in Greeley, Colorado, that specializes in paper art. We pride ourselves in handmade invitations, scrapbooks, greeting cards, and ornaments. One of our specialties is the creation of quilled artwork on photo mats. All quilled work at The Paper Petal is done by hand with much love and patience.
           </p>
@@ -118,9 +134,6 @@
         &copy; The PaperPetal, LLC 2014 All Rights Reserved.
       </footer>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>

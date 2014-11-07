@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Paper Petal, LLC</title>
 
+   <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>  -->
+    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/thepaperpetalstyles.css" rel="stylesheet">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -54,33 +64,38 @@
           </p><br />
           <div class="row">
             <div class="col-xs-3">
-                <a href="images/ornaments/angels640_480.jpg" target="_blank" class="thumbnail">
+                <a class="thumbnail fancybox" href="images/ornaments/angels640_480.jpg"  target="_blank" >
                     <img class="img-responsive" src="images/ornaments/angels640_480.jpg" alt="angel">
                 </a>
             </div>
             <div class="col-xs-3">
-                <a href="images/ornaments/angelsback640_480.jpg" target="_blank" class="thumbnail">
+                <a class="thumbnail fancybox" href="images/ornaments/angelsback640_480.jpg" target="_blank">
                     <img class="img-responsive" src="images/ornaments/angelsback640_480.jpg" alt="angel">
                 </a>
             </div>
             <div class="col-xs-3">
-                <a href="images/ornaments/wreathpoinsetta.jpg" target="_blank" class="thumbnail">
+                <a class="thumbnail fancybox" href="images/ornaments/wreathpoinsetta.jpg" target="_blank">
                     <img class="img-responsive" src="images/ornaments/wreathpoinsetta.jpg" alt="poinsettawreath">
                 </a>
             </div>
             <div class="col-xs-3">
-                <a href="images/ornaments/redrosemum640_480.jpg" target="_blank" class="thumbnail">
+                <a class="thumbnail fancybox" href="images/ornaments/redrosemum640_480.jpg" target="_blank">
                     <img class="img-responsive" src="images/ornaments/redrosemum640_480.jpg" alt="redroseandmumornament">
                 </a>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-3">
-                <a href="images/ornaments/wreath640_480.jpg" target="_blank" class="thumbnail">
+                <a class="thumbnail fancybox" href="images/ornaments/wreath640_480.jpg" target="_blank">
                     <img class="img-responsive" src="images/ornaments/wreath640_480.jpg" alt="wreathphotoframeornament">
                 </a>
             </div>
           </div>
+          <script type="text/javascript">
+            $(document).ready(function() {
+              $('.fancybox').fancybox();
+            });
+          </script>
         </div> 
         <div class="col-md-4">
             <div class="panel panel-default">
@@ -110,9 +125,6 @@
         &copy; The PaperPetal, LLC 2014 All Rights Reserved.
       </footer>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    
   </body>
 </html>

@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Paper Petal, LLC</title>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/thepaperpetalstyles.css" rel="stylesheet">
@@ -51,68 +58,68 @@
 
           <div class="row">
               <div class="col-xs-offset-1 col-xs-3">
-                  <a href="images/scrapbook/rockies.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/rockies.jpg" target="_blank">
                       <img class="img-responsive" src="images/scrapbook/rockies.jpg" alt="baseball">
                   </a>
               </div>
               <div class="col-xs-3">
-                  <a href="images/scrapbook/bigadventures.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/bigadventures.jpg" target="_blank">
                       <img class="img-responsive" src="images/scrapbook/bigadventures.jpg" alt="adventures">
                   </a>
               </div>
               <div class="col-xs-3">
-                  <a href="images/scrapbook/butterfly.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/butterfly.jpg" target="_blank">
                       <img class="img-responsive" src="images/scrapbook/butterfly.jpg" alt="butterfly">
                   </a>
               </div>   
         </div>
         <div class="row">
               <div class="col-xs-offset-1 col-xs-3">
-                  <a href="images/scrapbook/denverzoo2.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/denverzoo2.jpg" target="_blank">
                       <img src="images/scrapbook/denverzoo2.jpg" alt="zoo">
                   </a>
               </div>
               <div class="col-xs-3">
-                  <a href="images/scrapbook/oneyear.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/oneyear.jpg" target="_blank">
                       <img src="images/scrapbook/oneyear.jpg" alt="oneyear">
                   </a>
               </div>
               <div class="col-xs-3">
-                  <a href="images/scrapbook/ring.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/ring.jpg" target="_blank">
                       <img src="images/scrapbook/ring.jpg" alt="ringbearer">
                   </a>
               </div> 
         </div>
         <div class="row">
               <div class="col-xs-offset-1 col-xs-3">
-                  <a href="images/scrapbook/snake.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/snake.jpg" target="_blank">
                       <img src="images/scrapbook/snake.jpg" alt="snake">
                   </a>
               </div>
               <div class="col-xs-3">
-                  <a href="images/scrapbook/storytime.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/storytime.jpg" target="_blank">
                       <img src="images/scrapbook/storytime.jpg" alt="storytime">
                   </a>
               </div>
               <div class="col-xs-3">
-                  <a href="images/scrapbook/thekitchenplayground.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/thekitchenplayground.jpg" target="_blank">
                       <img src="images/scrapbook/thekitchenplayground.jpg" alt="thekitchenplayground">
                   </a>
               </div> 
         </div>
         <div class="row">
               <div class="col-xs-offset-1 col-xs-3">
-                  <a href="images/scrapbook/twoyearsold.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/twoyearsold.jpg" target="_blank">
                       <img src="images/scrapbook/twoyearsold.jpg" alt="twoyearsold">
                   </a>
               </div>
               <div class="col-xs-3">
-                  <a href="images/scrapbook/cozoo.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/cozoo.jpg" target="_blank">
                       <img src="images/scrapbook/cozoo.jpg" alt="zoo">
                   </a>
               </div>
               <div class="col-xs-3">
-                  <a href="images/scrapbook/winterwonder.jpg" target="_blank" class="thumbnail">
+                  <a class="thumbnail fancybox" href="images/scrapbook/winterwonder.jpg" target="_blank">
                       <img src="images/scrapbook/winterwonder.jpg" alt="Winter">
                   </a>
               </div> 
@@ -145,9 +152,10 @@
       &copy; The PaperPetal, LLC 2014 All Rights Reserved.
     </footer>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.fancybox').fancybox();
+      });
+    </script>
   </body>
 </html>
