@@ -55,6 +55,11 @@ a {
 	float: right;
 
 }
+
+.carousel-control.right, .carousel-control.left {
+	margin-bottom: 30px;
+}
+
 .nav-tabs {
 	border-bottom: 2px solid #333366;
 	margin-bottom: 26px;
